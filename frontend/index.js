@@ -1,13 +1,13 @@
-import React from 'react'
-import { render } from 'react-dom'
-import App from './components/App'
-import './styles/reset.css'
-import './styles/styles.css'
+import React from "react";
+import { render } from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import App from "./components/App";
+import "./styles/reset.css";
+import "./styles/styles.css";
 
 render(
-  <React.StrictMode>
-    <h1>Todo App</h1>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>
-  , document.getElementById('root')
-)
+  </BrowserRouter>,
+  document.getElementById("root")
+);
